@@ -1,0 +1,350 @@
+/*Reglas
+Selectores
+Declaraciones
+Propiedades
+valores*/
+
+/*Selector de etiqueta: header section article nav
+
+header {
+    background: pink;
+}
+selector descendente*//*
+body header div nav ol li a {}*/
+
+/*Selector de clase
+.link
+
+Selector de id
+#portafolio*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+/*Cambiar la fuente a un elemento en especial
+
+Para aplicar un propiedad a selectores diferentes los debemos separar por coma (,)*/
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal; /* peso de fuente*/
+   /* font-style: italic; estilo de la fuente */
+}
+
+h1 {
+    font-size: xx-large; /*tamaño de fuente: font-size*/
+    line-height: 1.5em; /*propiedad para cambiar el alto de linea line-height*/
+    letter-spacing: -.2px; /*Espaciado de las letras*/
+   /* text-transform: uppercase; Transforma el texto a mayusculas o minusculas
+    text-decoration: dashed; Decoración del texto, subrayado*/
+    color: white;
+    margin: 0;
+   /* margin: 100px 150px 70px 30px; /*ESTRUCTURA DEL MARGIN: margin: top right bottom left;*/
+}
+
+
+
+h1 strong { /* Le damos un color a las etiquetas strong que se encuentran 
+                dentro del h1*/
+    color: #00E64D; 
+}
+
+h2 {
+    color: #00E64D;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero {
+    height: 300px;
+  /*  background-image: url('../SENA - ECCL.jpg'); */
+    background-color: #423f3f;  /*Color de fondo para el hero */
+   /* background-size: 500px 300px; /* Ancho y alto de la imagen*/
+   /* background-repeat: no-repeat; /* Hace que no se repita nuestra imagen*/
+   /* background-position-x: right;  /*Posicion de la imagen en el eje x*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image{
+    object-fit: cover;}
+
+.portfolio {
+    background: #fafafa; /*color de fondo de el portafolio de proyectos destacados*/
+    padding: 20px;
+}
+
+.project {
+    /* border-top: 10px solid red; Borde en la parte superior, tamaño tipo estilo
+    border-right: 10px solid red;
+    border-left: 10px solid red;
+    border-bottom: 10px solid red; */
+   /* color: pink; Este tambien cambia el color de nuestra letra*/
+   /* border-top-color: yellow; /*Cambia el color del borde superior*/
+  /*  border-color: red; /*Color del borde*/
+   /* border-width: 15px; /*Ancho del borde*/
+ /*   border-style: solid; /*Estilo del borde*/
+ border: 1px solid gray;
+ border-radius: 10px; /*Borde redondeado en las esquinas*/
+ /* border-top-left-radius: 50px; Borde en algunas esquinas
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;*/
+    /* margin: 10px; */
+    margin-bottom: 15px;
+   /* margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 0%; */
+    padding: 20px;
+    background: white; /*Color de Fondo de este contenedor*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-course {
+    margin: 10 px 0;
+}
+
+.project-title,
+.project-date, 
+.project-url{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .project strong {
+    font-family: 'Fjalla One', sans-serif;
+  }
+  /* .project-date {
+    margin: 10px 0;
+  } */
+  
+  .project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+
+  .project-description {
+    font-size: 20px;
+  }
+
+.project-details { /*asigamos un ancho a la clase project-details*/
+    width: 500px;
+}
+
+/*Ancho del contenedor */
+.project-imageContainer {
+    width: 500px;
+}
+
+.header {
+    background-color: #9b9b9b; /*Color de fondo*/
+    color: white; /*Estilos a la letra*/
+    display: flex;
+    height: 130px;
+    justify-content: space-between;
+    align-items: center; /*Alinea los items del menu al centro*/
+}
+
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /*Quita la enumeracion de los items del menu*/
+}
+
+figure { /*Quitar los margenes a los elementos figure*/
+    margin: 0;
+}
+
+/*Estilos a los enlaces del header*/
+
+.header a {
+    color: white;
+    text-decoration: none; /*Quitarle el subrayado a nuestros enlaces*/
+}
+
+.menu {
+    height: inherit; /*Alto heredado*/
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+    
+}
+
+.header ol li {
+    height: inherit;
+   
+}
+
+.header a {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+.flexbox { /* PADRE */
+    display: flex;
+    flex-wrap: nowrap; /*Que ningun elemento caiga a la parte inferior */
+    flex-wrap: wrap; /*Que los elementos si caigan*/
+    flex-direction: row; /* Dirección de nuestro flex: en filas o en columnas */
+    justify-content: space-between;
+}
+
+ .box {   /*HIJO*/
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid red;
+
+    flex-shrink: 0; /* Capacidad de encojimiento de dicho elemento, para que no se altere el widht y el height (ancho y alto) */
+} 
+
+
+.footer {
+    background-color: #9B9B9B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color:white;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-list-title {
+    margin-left: 20px;
+}
+
+.event {
+   /* border: 1px solid red; */
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbff ;
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative; /*Superponer elementos encima de otros*/
+    padding: 20px;
+    text-align: center;
+
+}
+
+.event-description {
+    text-align: left;
+}
+
+.description-url {
+    border: 1px solid #00E65E;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #00E65E;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #00E65E;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+    background-image: url('../images/twitter.svg');
+  }
+  .social-link.facebook {
+    background-image: url('../images/facebook.svg');
+  }
+  .social-link.github {
+    background-image: url('../images/github.svg');
+  }
+  .social-link.instagram {
+    background-image: url('../images/instagram.svg');
+  }
+  
+  .form-email input {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+  }
+
+  .form-email button {
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+  }
+
+  .form-email h3 { 
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .container {
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+  }
